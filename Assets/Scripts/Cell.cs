@@ -6,6 +6,7 @@ public enum State { X, N, S }
 public class Cell : MonoBehaviour
 {
     public State state;
+    public int idx;
 
     public Color XColor = new Color( 0.2358491f, 0.2358491f, 0.2358491f );
     public Color NColor = new Color( 1f, 0.5235849f, 0.5235849f );
@@ -25,7 +26,7 @@ public class Cell : MonoBehaviour
     private void ChangeCell( )
     {
         SetState( BoardManager.instance.nextState );
-        BoardManager.instance.ChangeNextCell( );
+        BoardManager.instance.UpdateBoard( );
     }
 
     public void SetState( State target )
