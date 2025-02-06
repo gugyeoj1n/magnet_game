@@ -2,9 +2,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class BoardManager : MonoBehaviour
 {
+    private enum Direction { Up, Down, Left, Right }
+
     public int boardWidth;
     public int boardHeight;
     public List<Cell> cells;
@@ -67,19 +70,52 @@ public class BoardManager : MonoBehaviour
     public void UpdateBoard( int center )
     {
         ChangeNextCell( );
-        // GetAdjacentIndex로 가져온 칸들을 처리
+
+        State centerState = cells[ center ].state;
+        foreach( KeyValuePair<int, Direction> value in GetAdjacentIndex( center ) )
+        {
+            if( cells[ value.Key ].state != centerState && cells[ value.Key ].state != State.X )
+            {
+                cells[ value.Key ].SetState( State.X );
+                GameManager.instance.AddScore( 1 );
+            }
+            else if( cells[ value.Key ].state == centerState && cells[ value.Key ].state != State.X )
+            {
+                MoveCell( value.Key, value.Value );
+            }
+        }
     }
 
-    private List<int> GetAdjacentIndex( int target )
+    private void MoveCell( int target, Direction direction )
     {
-        List<int> adjacentIndices = new List<int>( );
         int row = target / boardWidth;
         int col = target % boardHeight;
 
-        if( row > 0 ) adjacentIndices.Add( target - boardWidth );
-        if( row < gridSize - 1 ) adjacentIndices.Add( target + boardWidth );
-        if( col > 0 ) adjacentIndices.Add( target - 1 );
-        if( col < gridSize - 1 ) adjacentIndices.Add( target + 1 );
+        switch( direction )
+        {
+            case Direction.Up :
+                break;
+            case Direction.Down :
+                break;
+            case Direction.Left :
+                break;
+            case Direction.Right :
+                break;
+            default :
+                break;
+        }
+    }
+
+    private Dictionary<int, Direction> GetAdjacentIndex( int target )
+    {
+        Dictionary<int, Direction> adjacentIndices = new Dictionary<int, Direction>( );
+        int row = target / boardWidth;
+        int col = target % boardHeight;
+
+        if( row > 0 ) adjacentIndices.Add( target - boardWidth, Direction.Up );
+        if( row < boardWidth - 1 ) adjacentIndices.Add( target + boardWidth, Direction.Down );
+        if( col > 0 ) adjacentIndices.Add( target - 1, Direction.Left );
+        if( col < boardHeight - 1 ) adjacentIndices.Add( target + 1, Direction.Right );
 
         return adjacentIndices;
     }

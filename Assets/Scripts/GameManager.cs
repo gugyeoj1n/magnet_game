@@ -1,16 +1,20 @@
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    public TMP_Text scoreText;
     public int score = 0;
+    public static GameManager instance;
 
-    void Start()
+    void Awake( )
     {
-        
+        instance = this;
     }
 
-    void Update()
+    public void AddScore( int value )
     {
-        
+        score += value;
+        scoreText.text = score.ToString( );
     }
 }
