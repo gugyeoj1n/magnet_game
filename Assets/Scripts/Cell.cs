@@ -16,6 +16,8 @@ public class Cell : MonoBehaviour
     private Image image;
     private Button button;
 
+    public Transform cellAnim;
+
     void Awake( )
     {
         image = GetComponent<Image>( );
@@ -48,6 +50,30 @@ public class Cell : MonoBehaviour
             seq.Append( transform.DOScale ( 1f, 0.5f ) );
         }
     }
+
+    public void MoveCell( Cell start, Cell end )
+    {
+        GameObject copiedCell = Instantiate( this.gameObject, cellAnim );
+
+        RectTransform copyRect = copiedCell.GetComponent<RectTransform>();
+        copyRect.anchorMin = new Vector2(0.5f, 0.5f);
+        copyRect.anchorMax = new Vector2(0.5f, 0.5f);
+        copyRect.pivot = new Vector2(0.5f, 0.5f);
+
+        Transform copiedTransform = copiedCell.transform;
+        copiedTransform.position = transform.position;
+        Vector3 prevPosition = copiedTransform.position;
+
+        end.state = start.state;
+        start.state = State.X;
+        start.SetColor( State.X );
+
+        copiedTransform.DOMove( end.transform.position, 1f ).OnComplete( ( ) => {
+            end.SetColor( end.state );
+            Destroy( copiedCell );
+        } );
+    }
+
 
     private void SetColor( State target )
     {

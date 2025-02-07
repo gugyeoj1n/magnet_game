@@ -219,6 +219,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1140588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,6 +358,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &11110461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495,6 +497,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &38622662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -709,6 +712,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &86965411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -923,6 +927,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &124334178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1666,6 +1671,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &263203275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1804,6 +1810,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &290044082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2018,6 +2025,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &365326478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2258,6 +2266,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &372116783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2396,6 +2405,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &406585568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2914,6 +2924,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &557598453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3010,7 +3021,7 @@ GameObject:
   - component: {fileID: 579460906}
   - component: {fileID: 579460905}
   m_Layer: 5
-  m_Name: Cell
+  m_Name: Current Cell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3556,6 +3567,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &726007107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3770,6 +3782,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &793882750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3908,6 +3921,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &877700428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4122,6 +4136,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &910225674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4336,6 +4351,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &927403238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4474,6 +4490,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1009789568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4764,6 +4781,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1024529864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4978,6 +4996,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1060486447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5116,6 +5135,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1071352426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5254,6 +5274,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1080955682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5392,6 +5413,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1111818283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5530,6 +5552,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1150273806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5668,6 +5691,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1158132957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5806,6 +5830,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1166355609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5944,6 +5969,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1187843446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6386,6 +6412,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1344421015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6524,6 +6551,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1366219842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6662,6 +6690,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1366254813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7028,6 +7057,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1437632175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7394,6 +7424,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1504296934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7532,6 +7563,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1507528615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7746,6 +7778,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1532983733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7960,6 +7993,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1542909947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8074,6 +8108,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1567193936}
   m_CullTransparentMesh: 1
+--- !u!1 &1619155558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1619155559}
+  m_Layer: 5
+  m_Name: Cell Anim
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1619155559
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619155558}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1996168911}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 800, y: 800}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1621663128
 GameObject:
   m_ObjectHideFlags: 0
@@ -8402,6 +8471,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1692566444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8452,7 +8522,7 @@ GameObject:
   - component: {fileID: 1713439039}
   - component: {fileID: 1713439038}
   m_Layer: 5
-  m_Name: Cell
+  m_Name: First Cell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8692,6 +8762,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1729625253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8830,6 +8901,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1734135371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9120,6 +9192,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1796524553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9334,6 +9407,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1815656431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9646,6 +9720,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1867124542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9784,6 +9859,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1871166839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9998,6 +10074,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1905590407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10364,6 +10441,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &1980615670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10436,6 +10514,7 @@ RectTransform:
   - {fileID: 232814629}
   - {fileID: 2076915330}
   - {fileID: 579460907}
+  - {fileID: 1619155559}
   m_Father: {fileID: 368214128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -10581,6 +10660,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &2001571826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10719,6 +10799,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &2014933658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10857,6 +10938,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &2017314822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11283,6 +11365,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &2082295496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11421,6 +11504,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &2108025687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11559,6 +11643,7 @@ MonoBehaviour:
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
+  cellAnim: {fileID: 1619155559}
 --- !u!114 &2124269808
 MonoBehaviour:
   m_ObjectHideFlags: 0

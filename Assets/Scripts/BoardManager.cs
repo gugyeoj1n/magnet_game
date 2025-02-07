@@ -117,13 +117,12 @@ public class BoardManager : MonoBehaviour
                 return;
         }
 
-        if (newTarget >= 0 && newTarget < cells.Count && cells[newTarget].state == State.X)
+        if ( newTarget >= 0 && newTarget < cells.Count && cells[ newTarget ].state == State.X )
         {
-            Debug.Log($"Moving from ({row}, {col}) to ({newTarget / boardWidth}, {newTarget % boardHeight}) in direction {direction}");
-
-            cells[newTarget].SetState(cells[target].state);
-            cells[target].SetState(State.X);
-            UpdateBoard(newTarget);
+            cells[ target ].MoveCell( cells[ target ], cells[ newTarget ] );
+            // cells[ newTarget ].SetState( cells[ target ].state );
+            // cells[ target ].SetState( State.X );
+            UpdateBoard( newTarget );
         }
     }
 
