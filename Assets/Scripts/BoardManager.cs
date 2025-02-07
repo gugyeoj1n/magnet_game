@@ -61,7 +61,8 @@ public class BoardManager : MonoBehaviour
 
     private void ChangeNextCell( )
     {
-        if( nextState == State.N )
+        int value = Random.Range( 1, 3 );
+        if( value == 1 )
         {
             nextState = State.S;
             nextCellImage.color = new Color( 0.5254902f, 0.6301079f, 1f );
@@ -74,10 +75,18 @@ public class BoardManager : MonoBehaviour
 
     public void ClickCell( int x, int y )
     {   
-        Cell newRandomCell = GetRandomEmptyCell( );
-        newRandomCell.SetState( ( State ) Random.Range( 1, 3 ) );
+        foreach( Cell cell in cells )
+            cell.LockClick( );
+
+        CheckOver( );
         ChangeNextCell( );
+        Cell newRandomCell = GetRandomEmptyCell( );
+
+        if( newRandomCell != null )
+            newRandomCell.SetState( ( State ) Random.Range( 1, 3 ) );
         UpdateBoard( x, y );
+
+        StartCoroutine( CheckOver( ) );
     }
 
     private void UpdateBoard( int x, int y )
@@ -89,8 +98,8 @@ public class BoardManager : MonoBehaviour
             int newY = y + dy[ i ];
 
             if( newX < 0 || newX >= boardWidth || newY < 0 || newY >= boardHeight )
-                return;
-                
+                continue;
+
             Cell target = board[ x + dx[ i ], y + dy[ i ] ];
             if( target.state != centerState && target.state != State.X )
             {
@@ -123,8 +132,18 @@ public class BoardManager : MonoBehaviour
                 emptyCells.Add( cell.idx );
 
         if( emptyCells.Count <= 0 )
+        {
             return null;
+        }
         int idx = emptyCells[ Random.Range( 0, emptyCells.Count ) ];
         return cells[ idx ];
+    }
+
+    private IEnumerator CheckOver( )
+    {
+        yield return new WaitForSeconds( 1f );
+        bool isGameOver = cells.All( cell => cell.state != State.X );
+        if( isGameOver )
+            GameManager.instance.GameOver( );
     }
 }

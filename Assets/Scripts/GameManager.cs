@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
 
     void Start( )
     {
-        GameOver( );
+
     }
 
     public void AddScore( int value )
@@ -33,6 +33,8 @@ public class GameManager : MonoBehaviour
 
     public void GameOver( )
     {
+        BoardManager.instance.enabled = false;
+
         overPanel.SetActive( true );
         overScoreText.text = string.Format( "{0}점", score );
 

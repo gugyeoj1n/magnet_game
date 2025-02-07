@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using UnityEngine.UI;
 using DG.Tweening;
 
@@ -32,6 +33,18 @@ public class Cell : MonoBehaviour
     {
         SetState( BoardManager.instance.nextState );
         BoardManager.instance.ClickCell( x, y );
+    }
+
+    public void LockClick( )
+    {
+        StartCoroutine( StopClick( ) );
+    }
+
+    private IEnumerator StopClick( )
+    {
+        button.enabled = false;
+        yield return new WaitForSeconds( 1f );
+        button.enabled = true;
     }
 
     public void SetState( State target )
