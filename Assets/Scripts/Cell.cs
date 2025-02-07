@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public enum State { X, N, S }
 
@@ -32,7 +33,20 @@ public class Cell : MonoBehaviour
     public void SetState( State target )
     {
         state = target;
-        SetColor( target );
+        var seq = DOTween.Sequence( );
+        if( target == State.X )
+        {
+            seq.Append( transform.DOScale( 0f, 0.5f ).OnComplete( ( ) => {
+                SetColor( target );
+                transform.localScale = Vector3.one;
+            } ) );
+        }
+        else
+        {
+            SetColor( target );
+            seq.Append( transform.DOScale ( 0.7f, 0.5f ) );
+            seq.Append( transform.DOScale ( 1f, 0.5f ) );
+        }
     }
 
     private void SetColor( State target )
