@@ -11,7 +11,6 @@ public class BoardManager : MonoBehaviour
     public int boardWidth;
     public int boardHeight;
     public List<Cell> cells;
-
     public State nextState;
     public Image nextCellImage;
 
@@ -68,7 +67,9 @@ public class BoardManager : MonoBehaviour
     }
 
     public void ClickCell( int target )
-    {
+    {   
+        Cell newRandomCell = GetRandomEmptyCell( );
+        newRandomCell.SetState( ( State ) Random.Range( 1, 3 ) );
         ChangeNextCell( );
         UpdateBoard( target );
     }
@@ -139,5 +140,16 @@ public class BoardManager : MonoBehaviour
         if( col < boardHeight - 1 ) adjacentIndices.Add( target + 1, Direction.Right );
 
         return adjacentIndices;
+    }
+
+    private Cell GetRandomEmptyCell( )
+    {
+        List<int> emptyCells = new List<int>( );
+        foreach( Cell cell in cells )
+            if( cell.state == State.X )
+                emptyCells.Add( cell.idx );
+
+        int idx = emptyCells[ Random.Range( 0, emptyCells.Count ) ];
+        return cells[ idx ];
     }
 }
