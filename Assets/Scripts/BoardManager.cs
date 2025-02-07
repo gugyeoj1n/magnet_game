@@ -1,8 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine.SocialPlatforms.Impl;
 
 public class BoardManager : MonoBehaviour
 {
@@ -42,14 +42,10 @@ public class BoardManager : MonoBehaviour
             int row = index / boardWidth;
             int col = index % boardWidth;
 
-            if( !usedRows.Contains( row ) && !usedCols.Contains( col ) )
-            {
-                State randomState = ( State ) Random.Range( 1, 3 );
-                cells[ index ].SetState( randomState );
-
-                usedRows.Add( row );
-                usedCols.Add( col );
-            }
+            State randomState = ( State ) Random.Range( 1, 3 );
+            cells[ index ].SetState( randomState );
+            usedRows.Add( row );
+            usedCols.Add( col );
         }
     }
 
@@ -120,8 +116,6 @@ public class BoardManager : MonoBehaviour
         if ( newTarget >= 0 && newTarget < cells.Count && cells[ newTarget ].state == State.X )
         {
             cells[ target ].MoveCell( cells[ target ], cells[ newTarget ] );
-            // cells[ newTarget ].SetState( cells[ target ].state );
-            // cells[ target ].SetState( State.X );
             UpdateBoard( newTarget );
         }
     }
@@ -148,6 +142,8 @@ public class BoardManager : MonoBehaviour
             if( cell.state == State.X )
                 emptyCells.Add( cell.idx );
 
+        if( emptyCells.Count <= 0 )
+            return null;
         int idx = emptyCells[ Random.Range( 0, emptyCells.Count ) ];
         return cells[ idx ];
     }
