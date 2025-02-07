@@ -67,10 +67,14 @@ public class BoardManager : MonoBehaviour
         }
     }
 
-    public void UpdateBoard( int center )
+    public void ClickCell( int target )
     {
         ChangeNextCell( );
+        UpdateBoard( target );
+    }
 
+    private void UpdateBoard( int center )
+    {
         State centerState = cells[ center ].state;
         foreach( KeyValuePair<int, Direction> value in GetAdjacentIndex( center ) )
         {
@@ -86,25 +90,42 @@ public class BoardManager : MonoBehaviour
         }
     }
 
-    private void MoveCell( int target, Direction direction )
+    private void MoveCell(int target, Direction direction)
     {
         int row = target / boardWidth;
         int col = target % boardHeight;
+        int newTarget = target;
 
-        switch( direction )
+        switch (direction)
         {
-            case Direction.Up :
+            case Direction.Up:
+                newTarget = target - boardWidth;
                 break;
-            case Direction.Down :
+            case Direction.Down:
+                newTarget = target + boardWidth;
                 break;
-            case Direction.Left :
+            case Direction.Left:
+                if ( col == 0 ) return;
+                newTarget = target - 1;
                 break;
-            case Direction.Right :
+            case Direction.Right:
+                if( col == boardWidth - 1 ) return;
+                newTarget = target + 1;
                 break;
-            default :
-                break;
+            default:
+                return;
+        }
+
+        if (newTarget >= 0 && newTarget < cells.Count && cells[newTarget].state == State.X)
+        {
+            Debug.Log($"Moving from ({row}, {col}) to ({newTarget / boardWidth}, {newTarget % boardHeight}) in direction {direction}");
+
+            cells[newTarget].SetState(cells[target].state);
+            cells[target].SetState(State.X);
+            UpdateBoard(newTarget);
         }
     }
+
 
     private Dictionary<int, Direction> GetAdjacentIndex( int target )
     {

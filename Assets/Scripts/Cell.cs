@@ -26,7 +26,7 @@ public class Cell : MonoBehaviour
     private void ChangeCell( )
     {
         SetState( BoardManager.instance.nextState );
-        BoardManager.instance.UpdateBoard( idx );
+        BoardManager.instance.ClickCell( idx );
     }
 
     public void SetState( State target )
