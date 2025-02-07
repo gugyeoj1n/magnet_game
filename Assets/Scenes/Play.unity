@@ -218,9 +218,6 @@ MonoBehaviour:
   idx: 0
   x: 0
   y: 0
-  XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-  NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
-  SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
   cellAnim: {fileID: 1619155559}
 --- !u!114 &1140588
 MonoBehaviour:
@@ -235,14 +232,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -359,9 +356,6 @@ MonoBehaviour:
   idx: 0
   x: 0
   y: 0
-  XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-  NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
-  SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
   cellAnim: {fileID: 1619155559}
 --- !u!114 &11110461
 MonoBehaviour:
@@ -376,14 +370,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -576,9 +570,6 @@ MonoBehaviour:
   idx: 0
   x: 0
   y: 0
-  XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-  NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
-  SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
   cellAnim: {fileID: 1619155559}
 --- !u!114 &86965411
 MonoBehaviour:
@@ -593,14 +584,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -793,9 +784,6 @@ MonoBehaviour:
   idx: 0
   x: 0
   y: 0
-  XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-  NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
-  SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
   cellAnim: {fileID: 1619155559}
 --- !u!114 &124334178
 MonoBehaviour:
@@ -810,14 +798,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -846,6 +834,7 @@ GameObject:
   - component: {fileID: 185451507}
   - component: {fileID: 185451506}
   - component: {fileID: 185451505}
+  - component: {fileID: 185451508}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -927,6 +916,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &185451508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185451504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &196113189
 GameObject:
   m_ObjectHideFlags: 0
@@ -1347,7 +1380,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 690c7adcf8bcd44279eefcbad1ea4d7b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1484,9 +1517,6 @@ MonoBehaviour:
   idx: 0
   x: 0
   y: 0
-  XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-  NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
-  SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
   cellAnim: {fileID: 1619155559}
 --- !u!114 &263203275
 MonoBehaviour:
@@ -1501,14 +1531,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1661,7 +1691,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 690c7adcf8bcd44279eefcbad1ea4d7b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1822,9 +1852,6 @@ MonoBehaviour:
   idx: 0
   x: 0
   y: 0
-  XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-  NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
-  SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
   cellAnim: {fileID: 1619155559}
 --- !u!114 &365326478
 MonoBehaviour:
@@ -1839,14 +1866,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2065,9 +2092,6 @@ MonoBehaviour:
   idx: 0
   x: 0
   y: 0
-  XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-  NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
-  SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
   cellAnim: {fileID: 1619155559}
 --- !u!114 &372116783
 MonoBehaviour:
@@ -2082,14 +2106,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2206,9 +2230,6 @@ MonoBehaviour:
   idx: 0
   x: 0
   y: 0
-  XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-  NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
-  SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
   cellAnim: {fileID: 1619155559}
 --- !u!114 &406585568
 MonoBehaviour:
@@ -2223,14 +2244,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2324,6 +2345,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474855047}
   m_CullTransparentMesh: 1
+--- !u!1 &535108501
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 535108503}
+  - component: {fileID: 535108502}
+  m_Layer: 0
+  m_Name: Cell Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &535108502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535108501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1b0165e8e96c78419fbab3dde1545b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xImage: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
+  nImage: {fileID: 6059799596907309901, guid: cb8394e1a4ddf2d46ac9a4ef06f3bc3c, type: 3}
+  sImage: {fileID: -1182827721247122346, guid: df0a7aa6bc322204bacedfc9a51498fd, type: 3}
+--- !u!4 &535108503
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535108501}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &560221661
 GameObject:
   m_ObjectHideFlags: 0
@@ -2704,9 +2772,6 @@ MonoBehaviour:
   idx: 0
   x: 0
   y: 0
-  XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-  NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
-  SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
   cellAnim: {fileID: 1619155559}
 --- !u!114 &726007107
 MonoBehaviour:
@@ -2721,14 +2786,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2845,9 +2910,6 @@ MonoBehaviour:
   idx: 0
   x: 0
   y: 0
-  XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-  NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
-  SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
   cellAnim: {fileID: 1619155559}
 --- !u!114 &793882750
 MonoBehaviour:
@@ -2862,14 +2924,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2986,9 +3048,6 @@ MonoBehaviour:
   idx: 0
   x: 0
   y: 0
-  XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-  NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
-  SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
   cellAnim: {fileID: 1619155559}
 --- !u!114 &910225674
 MonoBehaviour:
@@ -3003,14 +3062,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3203,9 +3262,6 @@ MonoBehaviour:
   idx: 0
   x: 0
   y: 0
-  XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-  NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
-  SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
   cellAnim: {fileID: 1619155559}
 --- !u!114 &1009789568
 MonoBehaviour:
@@ -3220,14 +3276,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3496,9 +3552,6 @@ MonoBehaviour:
   idx: 0
   x: 0
   y: 0
-  XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-  NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
-  SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
   cellAnim: {fileID: 1619155559}
 --- !u!114 &1060486447
 MonoBehaviour:
@@ -3513,14 +3566,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3637,9 +3690,6 @@ MonoBehaviour:
   idx: 0
   x: 0
   y: 0
-  XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-  NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
-  SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
   cellAnim: {fileID: 1619155559}
 --- !u!114 &1158132957
 MonoBehaviour:
@@ -3654,14 +3704,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3778,9 +3828,6 @@ MonoBehaviour:
   idx: 0
   x: 0
   y: 0
-  XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-  NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
-  SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
   cellAnim: {fileID: 1619155559}
 --- !u!114 &1166355609
 MonoBehaviour:
@@ -3795,14 +3842,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3919,9 +3966,6 @@ MonoBehaviour:
   idx: 0
   x: 0
   y: 0
-  XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-  NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
-  SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
   cellAnim: {fileID: 1619155559}
 --- !u!114 &1187843446
 MonoBehaviour:
@@ -3936,14 +3980,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4212,9 +4256,6 @@ MonoBehaviour:
   idx: 0
   x: 0
   y: 0
-  XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-  NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
-  SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
   cellAnim: {fileID: 1619155559}
 --- !u!114 &1366219842
 MonoBehaviour:
@@ -4229,14 +4270,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4641,9 +4682,6 @@ MonoBehaviour:
   idx: 0
   x: 0
   y: 0
-  XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-  NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
-  SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
   cellAnim: {fileID: 1619155559}
 --- !u!114 &1437632175
 MonoBehaviour:
@@ -4658,14 +4696,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5010,9 +5048,6 @@ MonoBehaviour:
   idx: 0
   x: 0
   y: 0
-  XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-  NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
-  SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
   cellAnim: {fileID: 1619155559}
 --- !u!114 &1504296934
 MonoBehaviour:
@@ -5027,14 +5062,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5227,9 +5262,6 @@ MonoBehaviour:
   idx: 0
   x: 0
   y: 0
-  XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-  NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
-  SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
   cellAnim: {fileID: 1619155559}
 --- !u!114 &1532983733
 MonoBehaviour:
@@ -5244,14 +5276,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5846,9 +5878,6 @@ MonoBehaviour:
   idx: 0
   x: 0
   y: 0
-  XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-  NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
-  SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
   cellAnim: {fileID: 1619155559}
 --- !u!114 &1729625253
 MonoBehaviour:
@@ -5863,14 +5892,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6063,9 +6092,6 @@ MonoBehaviour:
   idx: 0
   x: 0
   y: 0
-  XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-  NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
-  SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
   cellAnim: {fileID: 1619155559}
 --- !u!114 &1796524553
 MonoBehaviour:
@@ -6080,14 +6106,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6354,9 +6380,6 @@ MonoBehaviour:
   idx: 0
   x: 0
   y: 0
-  XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-  NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
-  SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
   cellAnim: {fileID: 1619155559}
 --- !u!114 &1905590407
 MonoBehaviour:
@@ -6371,14 +6394,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6940,9 +6963,6 @@ MonoBehaviour:
   idx: 0
   x: 0
   y: 0
-  XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-  NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
-  SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
   cellAnim: {fileID: 1619155559}
 --- !u!114 &2001571826
 MonoBehaviour:
@@ -6957,14 +6977,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7353,9 +7373,6 @@ MonoBehaviour:
   idx: 0
   x: 0
   y: 0
-  XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-  NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
-  SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
   cellAnim: {fileID: 1619155559}
 --- !u!114 &2124269808
 MonoBehaviour:
@@ -7370,14 +7387,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 708829cc54f97413dac29875ba319162, type: 3}
+  m_Sprite: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7404,3 +7421,4 @@ SceneRoots:
   - {fileID: 624333328}
   - {fileID: 1831289678}
   - {fileID: 560221663}
+  - {fileID: 535108503}

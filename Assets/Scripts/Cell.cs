@@ -12,10 +12,6 @@ public class Cell : MonoBehaviour
     public int x;
     public int y;
     
-    public Color XColor = new Color( 0.2358491f, 0.2358491f, 0.2358491f );
-    public Color NColor = new Color( 1f, 0.5235849f, 0.5235849f );
-    public Color SColor = new Color( 0.5254902f, 0.6301079f, 1f );
-
     private Image image;
     private Button button;
 
@@ -95,15 +91,15 @@ public class Cell : MonoBehaviour
         switch ( state )
         {
             case State.X :
-                image.color = XColor;
+                image.sprite = CellManager.instance.xImage;
                 button.enabled = true;
                 break;
             case State.N :
-                image.color = NColor;
+                image.sprite = CellManager.instance.nImage;
                 button.enabled = false;
                 break;
             case State.S :
-                image.color = SColor;
+                image.sprite = CellManager.instance.sImage;
                 button.enabled = false;
                 break;
             default :
