@@ -216,6 +216,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   idx: 0
+  x: 0
+  y: 0
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
@@ -355,6 +357,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   idx: 0
+  x: 0
+  y: 0
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
@@ -570,6 +574,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   idx: 0
+  x: 0
+  y: 0
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
@@ -785,6 +791,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   idx: 0
+  x: 0
+  y: 0
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
@@ -1474,6 +1482,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   idx: 0
+  x: 0
+  y: 0
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
@@ -1810,6 +1820,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   idx: 0
+  x: 0
+  y: 0
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
@@ -2051,6 +2063,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   idx: 0
+  x: 0
+  y: 0
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
@@ -2190,6 +2204,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   idx: 0
+  x: 0
+  y: 0
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
@@ -2332,7 +2348,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560221661}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e2dd03f67696a2499d03828b8dba576, type: 3}
   m_Name: 
@@ -2686,6 +2702,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   idx: 0
+  x: 0
+  y: 0
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
@@ -2825,6 +2843,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   idx: 0
+  x: 0
+  y: 0
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
@@ -2964,6 +2984,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   idx: 0
+  x: 0
+  y: 0
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
@@ -3179,6 +3201,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   idx: 0
+  x: 0
+  y: 0
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
@@ -3470,6 +3494,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   idx: 0
+  x: 0
+  y: 0
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
@@ -3609,6 +3635,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   idx: 0
+  x: 0
+  y: 0
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
@@ -3748,6 +3776,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   idx: 0
+  x: 0
+  y: 0
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
@@ -3887,6 +3917,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   idx: 0
+  x: 0
+  y: 0
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
@@ -4178,6 +4210,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   idx: 0
+  x: 0
+  y: 0
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
@@ -4605,6 +4639,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   idx: 0
+  x: 0
+  y: 0
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
@@ -4972,6 +5008,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   idx: 0
+  x: 0
+  y: 0
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
@@ -5187,6 +5225,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   idx: 0
+  x: 0
+  y: 0
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
@@ -5804,6 +5844,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   idx: 0
+  x: 0
+  y: 0
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
@@ -6019,6 +6061,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   idx: 0
+  x: 0
+  y: 0
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
@@ -6308,6 +6352,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   idx: 0
+  x: 0
+  y: 0
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
@@ -6892,6 +6938,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   idx: 0
+  x: 0
+  y: 0
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}
@@ -7303,6 +7351,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   idx: 0
+  x: 0
+  y: 0
   XColor: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
   NColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
   SColor: {r: 0.5254902, g: 0.6301079, b: 1, a: 1}

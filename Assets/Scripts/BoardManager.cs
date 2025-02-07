@@ -7,10 +7,14 @@ using System.Linq;
 public class BoardManager : MonoBehaviour
 {
     private enum Direction { Up, Down, Left, Right }
+    private int[] dx = new int[] { 0, 0, 1, -1 };
+    private int[] dy = new int[] { 1, -1, 0, 0 };
 
     public int boardWidth;
     public int boardHeight;
     public List<Cell> cells;
+    public Cell[ , ] board;
+
     public State nextState;
     public Image nextCellImage;
 
@@ -28,24 +32,30 @@ public class BoardManager : MonoBehaviour
 
     private void InitBoard( )
     {
-        for( int i = 0; i < cells.Count; i++ )
-            cells[ i ].idx = i;
+        board = new Cell[ boardWidth, boardHeight ];
 
-        int totalCells = cells.Count;
-        int[ ] randomIndices = Enumerable.Range( 0, totalCells ).OrderBy( n => Random.value ).Take( 10 ).ToArray( );
+        int cellIdx = 0;
+        for( int i = 0; i < boardWidth; i++ )
+            for( int j = 0; j < boardHeight; j++)
+            {
+                board[ i, j ] = cells[ cellIdx ];
+                board[ i, j ].idx = cellIdx;
+                board[ i, j ].x = i;
+                board[ i, j ].y = j;
+                cellIdx++;
+            }
 
-        HashSet<int> usedRows = new HashSet<int>( );
-        HashSet<int> usedCols = new HashSet<int>( );
-
-        foreach( int index in randomIndices )
+        List<Vector2Int> allPoints = new List<Vector2Int>( );
+        for ( int x = 0; x < boardWidth; x++ )
+            for ( int y = 0; y < boardHeight; y++ )
+                allPoints.Add( new Vector2Int ( x, y ) );
+                
+        for ( int i = 0; i < 10; i++ )
         {
-            int row = index / boardWidth;
-            int col = index % boardWidth;
-
-            State randomState = ( State ) Random.Range( 1, 3 );
-            cells[ index ].SetState( randomState );
-            usedRows.Add( row );
-            usedCols.Add( col );
+            int index = Random.Range( 0, allPoints.Count );
+            Debug.Log( allPoints[ index ].x + " / " + allPoints[ index ].y );
+            board[ allPoints[ index ].x, allPoints[ index ].y ].SetState( ( State ) Random.Range( 1, 3 ) );
+            allPoints.RemoveAt( index );
         }
     }
 
@@ -62,81 +72,51 @@ public class BoardManager : MonoBehaviour
         }
     }
 
-    public void ClickCell( int target )
+    public void ClickCell( int x, int y )
     {   
         Cell newRandomCell = GetRandomEmptyCell( );
         newRandomCell.SetState( ( State ) Random.Range( 1, 3 ) );
         ChangeNextCell( );
-        UpdateBoard( target );
+        UpdateBoard( x, y );
     }
 
-    private void UpdateBoard( int center )
+    private void UpdateBoard( int x, int y )
     {
-        State centerState = cells[ center ].state;
-        foreach( KeyValuePair<int, Direction> value in GetAdjacentIndex( center ) )
+        State centerState = board[ x, y ].state;
+        for( int i = 0; i < 4; i++ )
         {
-            if( cells[ value.Key ].state != centerState && cells[ value.Key ].state != State.X )
+            int newX = x + dx[ i ];
+            int newY = y + dy[ i ];
+
+            if( newX < 0 || newX >= boardWidth || newY < 0 || newY >= boardHeight )
+                return;
+                
+            Cell target = board[ x + dx[ i ], y + dy[ i ] ];
+            if( target.state != centerState && target.state != State.X )
             {
-                cells[ value.Key ].SetState( State.X );
+                target.SetState( State.X );
                 GameManager.instance.AddScore( 1 );
             }
-            else if( cells[ value.Key ].state == centerState && cells[ value.Key ].state != State.X )
+            else if( target.state == centerState && target.state != State.X )
             {
-                MoveCell( value.Key, value.Value );
+                MoveCell( target, dx[ i ], dy[ i ] );
             }
         }
     }
 
-    private void MoveCell(int target, Direction direction)
+    private void MoveCell( Cell target, int dx, int dy )
     {
-        int row = target / boardWidth;
-        int col = target % boardHeight;
-        int newTarget = target;
-
-        switch (direction)
+        int newX = target.x + dx;
+        int newY = target.y + dy;
+        if( newX >= 0 && newX < boardWidth && newY >= 0 && newY < boardHeight && board[ newX, newY ].state == State.X )
         {
-            case Direction.Up:
-                newTarget = target - boardWidth;
-                break;
-            case Direction.Down:
-                newTarget = target + boardWidth;
-                break;
-            case Direction.Left:
-                if ( col == 0 ) return;
-                newTarget = target - 1;
-                break;
-            case Direction.Right:
-                if( col == boardWidth - 1 ) return;
-                newTarget = target + 1;
-                break;
-            default:
-                return;
+            target.MoveCell( target, board[ newX, newY ] );
+            UpdateBoard( newX, newY );
         }
-
-        if ( newTarget >= 0 && newTarget < cells.Count && cells[ newTarget ].state == State.X )
-        {
-            cells[ target ].MoveCell( cells[ target ], cells[ newTarget ] );
-            UpdateBoard( newTarget );
-        }
-    }
-
-
-    private Dictionary<int, Direction> GetAdjacentIndex( int target )
-    {
-        Dictionary<int, Direction> adjacentIndices = new Dictionary<int, Direction>( );
-        int row = target / boardWidth;
-        int col = target % boardHeight;
-
-        if( row > 0 ) adjacentIndices.Add( target - boardWidth, Direction.Up );
-        if( row < boardWidth - 1 ) adjacentIndices.Add( target + boardWidth, Direction.Down );
-        if( col > 0 ) adjacentIndices.Add( target - 1, Direction.Left );
-        if( col < boardHeight - 1 ) adjacentIndices.Add( target + 1, Direction.Right );
-
-        return adjacentIndices;
     }
 
     private Cell GetRandomEmptyCell( )
-    {
+    {   
         List<int> emptyCells = new List<int>( );
         foreach( Cell cell in cells )
             if( cell.state == State.X )
