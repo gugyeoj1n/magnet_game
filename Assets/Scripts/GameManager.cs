@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -46,5 +47,15 @@ public class GameManager : MonoBehaviour
         seq.Join( restartButton.transform.GetChild( 0 ).GetComponent<TMP_Text>( ).DOFade( 1f, 1f ) );
         seq.Join( homeButton.GetComponent<Image>( ).DOFade( 1f, 1f ) );
         seq.Join( homeButton.transform.GetChild( 0 ).GetComponent<TMP_Text>( ).DOFade( 1f, 1f ) );
+    }
+
+    public void RestartGame( )
+    {
+        SceneManager.LoadScene( "Play ");
+    }
+
+    public void LoadHome( )
+    {
+        SceneManager.LoadScene( "Title" );
     }
 }
