@@ -46,7 +46,8 @@ public class Cell : MonoBehaviour
     {
         button.enabled = false;
         yield return new WaitForSeconds( 1f );
-        button.enabled = true;
+        if( state == State.X )
+            button.enabled = true;
     }
 
     public void SetState( State target )
