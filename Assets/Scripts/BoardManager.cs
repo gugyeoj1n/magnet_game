@@ -61,15 +61,18 @@ public class BoardManager : MonoBehaviour
 
     private void ChangeNextCell( )
     {
-        int value = Random.Range( 1, 3 );
+        int value = Random.Range( 1, 4 );
         if( value == 1 )
         {
             nextState = State.S;
-            nextCellImage.color = new Color( 0.5254902f, 0.6301079f, 1f );
-        } else
+            nextCellImage.sprite = CellManager.instance.sImage;
+        } else if( value == 2 )
         {
             nextState = State.N;
-            nextCellImage.color = new Color( 1f, 0.5235849f, 0.5235849f );
+            nextCellImage.sprite = CellManager.instance.nImage;
+        } else {
+            nextState = State.Super;
+            nextCellImage.sprite = CellManager.instance.superImage;
         }
     }
 
@@ -101,6 +104,17 @@ public class BoardManager : MonoBehaviour
                 continue;
 
             Cell target = board[ x + dx[ i ], y + dy[ i ] ];
+
+            if( centerState == State.Super )
+            {
+                if( target.state != State.X )
+                {
+                    target.SetState( State.X );
+                    GameManager.instance.AddScore( 1 );
+                    continue;
+                }
+            }
+
             if( target.state != centerState && target.state != State.X )
             {
                 target.SetState( State.X );

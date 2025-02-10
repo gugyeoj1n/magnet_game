@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 using DG.Tweening;
 
-public enum State { X, N, S }
+public enum State { X, N, S, Super, Shell }
 
 public class Cell : MonoBehaviour
 {
@@ -106,6 +106,10 @@ public class Cell : MonoBehaviour
                 break;
             case State.S :
                 image.sprite = CellManager.instance.sImage;
+                button.enabled = false;
+                break;
+            case State.Super :
+                image.sprite = CellManager.instance.superImage;
                 button.enabled = false;
                 break;
             default :

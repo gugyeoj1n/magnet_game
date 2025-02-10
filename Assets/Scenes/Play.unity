@@ -3765,6 +3765,7 @@ MonoBehaviour:
   xImage: {fileID: 3959922740387019359, guid: da9f86087acc69a409a399b3caf65f34, type: 3}
   nImage: {fileID: 6059799596907309901, guid: cb8394e1a4ddf2d46ac9a4ef06f3bc3c, type: 3}
   sImage: {fileID: -1182827721247122346, guid: df0a7aa6bc322204bacedfc9a51498fd, type: 3}
+  superImage: {fileID: 7981902420718068315, guid: 11d2ec7c98205f64398a1397771a742b, type: 3}
 --- !u!4 &535108503
 Transform:
   m_ObjectHideFlags: 0
