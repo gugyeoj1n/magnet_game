@@ -17,16 +17,22 @@ public class Cell : MonoBehaviour
 
     public Transform cellAnim;
 
+    private AudioSource audio;
+    public AudioClip putSound;
+
     void Awake( )
     {
         image = GetComponent<Image>( );
         button = GetComponent<Button>( );
+        audio = GetComponent<AudioSource>( );
 
         button.onClick.AddListener( ChangeCell );
     }
 
     private void ChangeCell( )
     {
+        audio.clip = putSound;
+        audio.Play( );
         SetState( BoardManager.instance.nextState );
         BoardManager.instance.ClickCell( x, y );
     }

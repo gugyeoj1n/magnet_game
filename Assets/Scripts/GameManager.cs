@@ -16,6 +16,9 @@ public class GameManager : MonoBehaviour
     public Button restartButton;
     public Button homeButton;
 
+    private AudioSource audio;
+    public AudioClip overSound;
+
     void Awake( )
     {
         instance = this;
@@ -23,7 +26,7 @@ public class GameManager : MonoBehaviour
 
     void Start( )
     {
-
+        audio = GetComponent<AudioSource>( );
     }
 
     public void AddScore( int value )
@@ -34,6 +37,8 @@ public class GameManager : MonoBehaviour
 
     public void GameOver( )
     {
+        audio.clip = overSound;
+        audio.Play( );
         BoardManager.instance.enabled = false;
 
         overPanel.SetActive( true );
