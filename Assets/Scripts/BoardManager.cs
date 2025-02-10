@@ -27,6 +27,21 @@ public class BoardManager : MonoBehaviour
 
     void Start( )
     {
+        if (!PlayerPrefs.HasKey("isFirstRun"))
+        {
+            // 게임이 처음 실행되는 경우
+            PlayerPrefs.SetInt("isFirstRun", 1); // 키 저장
+            PlayerPrefs.Save(); // 변경 사항 저장
+
+            // 초기화 작업 수행 (예: 튜토리얼 시작, 기본 설정 등)
+            Debug.Log("게임이 처음 실행되었습니다.");
+        }
+        else
+        {
+            // 게임이 이미 실행된 경우
+            Debug.Log("게임이 이미 실행되었습니다.");
+        }
+
         InitBoard( );
         InitQueue( );
     }

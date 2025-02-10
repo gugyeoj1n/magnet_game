@@ -9155,6 +9155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba2c0d291113ba3419ec4ecb7804081b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  volumeSlider: {fileID: 965703307}
 --- !u!4 &1331907898
 Transform:
   m_ObjectHideFlags: 0
