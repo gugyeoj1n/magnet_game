@@ -15,8 +15,8 @@ public class BoardManager : MonoBehaviour
     public List<Cell> cells;
     public Cell[ , ] board;
 
-    public State nextState;
-    public Image nextCellImage;
+    public Queue<State> stateQueue;
+    public Image[] queuedCellImages;
 
     public static BoardManager instance;
 
@@ -28,6 +28,31 @@ public class BoardManager : MonoBehaviour
     void Start( )
     {
         InitBoard( );
+        InitQueue( );
+    }
+
+    private void InitQueue( )
+    {
+        stateQueue = new Queue<State>( );
+        for( int i = 0; i < 4; i++ )
+        {
+            State randomState = ( State ) Random.Range( 1, 4 );
+            stateQueue.Enqueue( randomState );
+            SetCellImage( queuedCellImages[ i ], randomState );
+        }    
+    }
+
+    private void SetCellImage( Image target, State state )
+    {
+        if( state == State.S )
+        {
+            target.sprite = CellManager.instance.sImage;
+        } else if( state == State.N )
+        {
+            target.sprite = CellManager.instance.nImage;
+        } else {
+            target.sprite = CellManager.instance.superImage;
+        }
     }
 
     private void InitBoard( )
@@ -61,19 +86,12 @@ public class BoardManager : MonoBehaviour
 
     private void ChangeNextCell( )
     {
-        int value = Random.Range( 1, 4 );
-        if( value == 1 )
-        {
-            nextState = State.S;
-            nextCellImage.sprite = CellManager.instance.sImage;
-        } else if( value == 2 )
-        {
-            nextState = State.N;
-            nextCellImage.sprite = CellManager.instance.nImage;
-        } else {
-            nextState = State.Super;
-            nextCellImage.sprite = CellManager.instance.superImage;
-        }
+        stateQueue.Dequeue( );
+        State randomState = ( State ) Random.Range( 1, 4 );
+        stateQueue.Enqueue( randomState );
+        
+        for( int i = 0; i < 4; i++ )
+            SetCellImage( queuedCellImages[ i ], stateQueue.ElementAt( i ) );
     }
 
     public void ClickCell( int x, int y )

@@ -33,7 +33,7 @@ public class Cell : MonoBehaviour
     {
         audio.clip = putSound;
         audio.Play( );
-        SetState( BoardManager.instance.nextState );
+        SetState( BoardManager.instance.stateQueue.Peek( ) );
         BoardManager.instance.ClickCell( x, y );
     }
 
