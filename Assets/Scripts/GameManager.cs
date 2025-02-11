@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame( )
     {
-        SceneManager.LoadScene( "Play ");
+        SceneManager.LoadScene( "Play" );
     }
 
     public void LoadHome( )
