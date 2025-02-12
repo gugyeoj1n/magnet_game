@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 
 public class BoardManager : MonoBehaviour
 {
@@ -27,21 +28,6 @@ public class BoardManager : MonoBehaviour
 
     void Start( )
     {
-        if (!PlayerPrefs.HasKey("isFirstRun"))
-        {
-            // 게임이 처음 실행되는 경우
-            PlayerPrefs.SetInt("isFirstRun", 1); // 키 저장
-            PlayerPrefs.Save(); // 변경 사항 저장
-
-            // 초기화 작업 수행 (예: 튜토리얼 시작, 기본 설정 등)
-            Debug.Log("게임이 처음 실행되었습니다.");
-        }
-        else
-        {
-            // 게임이 이미 실행된 경우
-            Debug.Log("게임이 이미 실행되었습니다.");
-        }
-
         InitBoard( );
         InitQueue( );
     }
@@ -51,7 +37,7 @@ public class BoardManager : MonoBehaviour
         stateQueue = new Queue<State>( );
         for( int i = 0; i < 4; i++ )
         {
-            State randomState = ( State ) Random.Range( 1, 4 );
+            State randomState = ( State ) Random.Range( 1, 5 );
             stateQueue.Enqueue( randomState );
             SetCellImage( queuedCellImages[ i ], randomState );
         }    
@@ -65,8 +51,10 @@ public class BoardManager : MonoBehaviour
         } else if( state == State.N )
         {
             target.sprite = CellManager.instance.nImage;
-        } else {
+        } else if( state == State.Super ) {
             target.sprite = CellManager.instance.superImage;
+        } else {
+            target.sprite = CellManager.instance.shellImage;
         }
     }
 
@@ -93,8 +81,16 @@ public class BoardManager : MonoBehaviour
         for ( int i = 0; i < 10; i++ )
         {
             int index = Random.Range( 0, allPoints.Count );
-            Debug.Log( allPoints[ index ].x + " / " + allPoints[ index ].y );
-            board[ allPoints[ index ].x, allPoints[ index ].y ].SetState( ( State ) Random.Range( 1, 3 ) );
+            Cell target = board[ allPoints[ index ].x, allPoints[ index ].y ];
+            target.SetState( ( State ) Random.Range( 1, 5 ) );
+            if( target.state == State.Shell )
+            {
+                target.shellCount = 3;
+                GameObject countText = Instantiate( CellManager.instance.shellCountText, target.transform );
+                countText.GetComponent<TMP_Text>( ).text = "3";
+                countText.transform.SetParent( target.transform, false );
+            }
+
             allPoints.RemoveAt( index );
         }
     }
@@ -102,7 +98,7 @@ public class BoardManager : MonoBehaviour
     private void ChangeNextCell( )
     {
         stateQueue.Dequeue( );
-        State randomState = ( State ) Random.Range( 1, 4 );
+        State randomState = ( State ) Random.Range( 1, 5 );
         stateQueue.Enqueue( randomState );
         
         for( int i = 0; i < 4; i++ )
@@ -119,7 +115,17 @@ public class BoardManager : MonoBehaviour
         Cell newRandomCell = GetRandomEmptyCell( );
 
         if( newRandomCell != null )
-            newRandomCell.SetState( ( State ) Random.Range( 1, 3 ) );
+        {
+            newRandomCell.SetState( ( State ) Random.Range( 1, 5 ) );
+            if( newRandomCell.state == State.Shell )
+            {
+                newRandomCell.shellCount = 3;
+                GameObject countText = Instantiate( CellManager.instance.shellCountText, newRandomCell.transform );
+                countText.GetComponent<TMP_Text>( ).text = "3";
+                countText.transform.SetParent( newRandomCell.transform, false );
+            }
+        }
+            
         UpdateBoard( x, y );
 
         StartCoroutine( CheckOver( ) );
@@ -128,6 +134,9 @@ public class BoardManager : MonoBehaviour
     private void UpdateBoard( int x, int y )
     {
         State centerState = board[ x, y ].state;
+        if( centerState == State.Shell )
+            return;
+
         for( int i = 0; i < 4; i++ )
         {
             int newX = x + dx[ i ];
@@ -148,6 +157,15 @@ public class BoardManager : MonoBehaviour
                 }
             }
 
+            if( target.state == State.Shell )
+            {
+                if( target.shellCount == 0 )
+                    target.RemoveCell( target, board[ x, y ] );
+                else
+                    MoveCell( target, dx[ i ], dy[ i ] );
+                continue;
+            }
+
             if( target.state != centerState && target.state != State.X )
             {
                 target.RemoveCell( target, board[ x, y ] );
@@ -166,6 +184,12 @@ public class BoardManager : MonoBehaviour
         int newY = target.y + dy;
         if( newX >= 0 && newX < boardWidth && newY >= 0 && newY < boardHeight && board[ newX, newY ].state == State.X )
         {
+            if( target.state == State.Shell )
+            {
+                Debug.Log( newX.ToString() + " / " + newY.ToString() );
+                target.shellCount--;
+                target.transform.GetChild( 0 ).GetComponent<TMP_Text>( ).text = target.shellCount.ToString( );
+            }
             target.MoveCell( target, board[ newX, newY ] );
             UpdateBoard( newX, newY );
         }

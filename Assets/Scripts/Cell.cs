@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using DG.Tweening;
+using TMPro;
 
 public enum State { X, N, S, Super, Shell }
 
@@ -11,6 +12,7 @@ public class Cell : MonoBehaviour
     public int idx;
     public int x;
     public int y;
+    public int shellCount;
     
     private Image image;
     private Button button;
@@ -36,6 +38,14 @@ public class Cell : MonoBehaviour
         audio.Play( );
         SetState( BoardManager.instance.stateQueue.Peek( ) );
         BoardManager.instance.ClickCell( x, y );
+
+        if( state == State.Shell )
+        {
+            shellCount = 3;
+            GameObject countText = Instantiate( CellManager.instance.shellCountText, transform );
+            countText.GetComponent<TMP_Text>( ).text = "3";
+            countText.transform.SetParent( transform, false );
+        }
     }
 
     public void LockClick( )
@@ -73,7 +83,9 @@ public class Cell : MonoBehaviour
     public void RemoveCell( Cell start, Cell end )
     {
         GameObject copiedCell = Instantiate( this.gameObject, removeCellAnim );
-
+        if( start.state == State.Shell )
+            Destroy( start.transform.GetChild( 0 ).gameObject );
+        
         RectTransform copyRect = copiedCell.GetComponent<RectTransform>();
         copyRect.anchorMin = new Vector2(0.5f, 0.5f);
         copyRect.anchorMax = new Vector2(0.5f, 0.5f);
@@ -95,6 +107,13 @@ public class Cell : MonoBehaviour
     public void MoveCell( Cell start, Cell end )
     {
         GameObject copiedCell = Instantiate( this.gameObject, cellAnim );
+        if( start.state == State.Shell )
+        {
+            Destroy( start.transform.GetChild( 0 ).gameObject );
+            end.shellCount = start.shellCount;
+            start.shellCount = 0;
+        }
+            
 
         RectTransform copyRect = copiedCell.GetComponent<RectTransform>();
         copyRect.anchorMin = new Vector2(0.5f, 0.5f);
@@ -111,6 +130,7 @@ public class Cell : MonoBehaviour
 
         copiedTransform.DOMove( end.transform.position, 1f ).OnComplete( ( ) => {
             end.SetColor( end.state );
+            copiedTransform.GetChild( 0 ).SetParent( end.transform );
             Destroy( copiedCell );
         } );
     }
@@ -134,6 +154,10 @@ public class Cell : MonoBehaviour
                 break;
             case State.Super :
                 image.sprite = CellManager.instance.superImage;
+                button.enabled = false;
+                break;
+            case State.Shell :
+                image.sprite = CellManager.instance.shellImage;
                 button.enabled = false;
                 break;
             default :

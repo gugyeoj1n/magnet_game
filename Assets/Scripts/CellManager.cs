@@ -7,6 +7,9 @@ public class CellManager : MonoBehaviour
     public Sprite nImage;
     public Sprite sImage;
     public Sprite superImage;
+    public Sprite shellImage;
+
+    public GameObject shellCountText;
 
     public static CellManager instance;
 
