@@ -142,7 +142,7 @@ public class BoardManager : MonoBehaviour
             {
                 if( target.state != State.X )
                 {
-                    target.SetState( State.X );
+                    target.RemoveCell( target, board[ x, y ] );
                     GameManager.instance.AddScore( 1 );
                     continue;
                 }
@@ -150,7 +150,7 @@ public class BoardManager : MonoBehaviour
 
             if( target.state != centerState && target.state != State.X )
             {
-                target.SetState( State.X );
+                target.RemoveCell( target, board[ x, y ] );
                 GameManager.instance.AddScore( 1 );
             }
             else if( target.state == centerState && target.state != State.X )

@@ -16,6 +16,7 @@ public class Cell : MonoBehaviour
     private Button button;
 
     public Transform cellAnim;
+    public Transform removeCellAnim;
 
     private AudioSource audio;
     public AudioClip putSound;
@@ -67,6 +68,28 @@ public class Cell : MonoBehaviour
             seq.Append( transform.DOScale ( 0.7f, 0.5f ) );
             seq.Append( transform.DOScale ( 1f, 0.5f ) );
         }
+    }
+
+    public void RemoveCell( Cell start, Cell end )
+    {
+        GameObject copiedCell = Instantiate( this.gameObject, removeCellAnim );
+
+        RectTransform copyRect = copiedCell.GetComponent<RectTransform>();
+        copyRect.anchorMin = new Vector2(0.5f, 0.5f);
+        copyRect.anchorMax = new Vector2(0.5f, 0.5f);
+        copyRect.pivot = new Vector2(0.5f, 0.5f);
+
+        Transform copiedTransform = copiedCell.transform;
+        copiedTransform.position = transform.position;
+        Vector3 prevPosition = copiedTransform.position;
+
+        start.state = State.X;
+        start.SetColor( State.X );
+
+        copiedTransform.DOScale( 0f, 1f );
+        copiedTransform.DOMove( end.transform.position, 1f ).OnComplete( ( ) => {
+            Destroy( copiedCell );
+        } );
     }
 
     public void MoveCell( Cell start, Cell end )
