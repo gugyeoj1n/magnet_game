@@ -83,8 +83,11 @@ public class Cell : MonoBehaviour
     public void RemoveCell( Cell start, Cell end )
     {
         GameObject copiedCell = Instantiate( this.gameObject, removeCellAnim );
-        if( start.state == State.Shell )
+        if (start.state == State.Shell)
+        {
             Destroy( start.transform.GetChild( 0 ).gameObject );
+            start.shellCount = 0;
+        }
         
         RectTransform copyRect = copiedCell.GetComponent<RectTransform>();
         copyRect.anchorMin = new Vector2(0.5f, 0.5f);

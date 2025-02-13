@@ -19,6 +19,16 @@ public class BoardManager : MonoBehaviour
     public Queue<State> stateQueue;
     public Image[] queuedCellImages;
 
+    [System.Serializable]
+    public class CellProb
+    {
+        public State state;
+        public int percentage;
+    }
+
+    [SerializeField]
+    private List<CellProb> cellProbs;
+
     public static BoardManager instance;
 
     void Awake( )
@@ -37,7 +47,7 @@ public class BoardManager : MonoBehaviour
         stateQueue = new Queue<State>( );
         for( int i = 0; i < 4; i++ )
         {
-            State randomState = ( State ) Random.Range( 1, 5 );
+            State randomState = PickState( );
             stateQueue.Enqueue( randomState );
             SetCellImage( queuedCellImages[ i ], randomState );
         }    
@@ -56,6 +66,20 @@ public class BoardManager : MonoBehaviour
         } else {
             target.sprite = CellManager.instance.shellImage;
         }
+    }
+
+    private State PickState()
+    {
+        int randomValue = Random.Range( 0, 100 );
+        int temp = 0;
+        for( int i = 0; i < cellProbs.Count; i++ )
+        {
+            temp += cellProbs[ i ].percentage;
+            if( randomValue < temp )
+                return cellProbs[ i ].state;
+        }
+
+        return State.X;
     }
 
     private void InitBoard( )
@@ -82,7 +106,7 @@ public class BoardManager : MonoBehaviour
         {
             int index = Random.Range( 0, allPoints.Count );
             Cell target = board[ allPoints[ index ].x, allPoints[ index ].y ];
-            target.SetState( ( State ) Random.Range( 1, 5 ) );
+            target.SetState( PickState( ) );
             if( target.state == State.Shell )
             {
                 target.shellCount = 3;
@@ -98,7 +122,7 @@ public class BoardManager : MonoBehaviour
     private void ChangeNextCell( )
     {
         stateQueue.Dequeue( );
-        State randomState = ( State ) Random.Range( 1, 5 );
+        State randomState = PickState( );
         stateQueue.Enqueue( randomState );
         
         for( int i = 0; i < 4; i++ )
@@ -116,7 +140,7 @@ public class BoardManager : MonoBehaviour
 
         if( newRandomCell != null )
         {
-            newRandomCell.SetState( ( State ) Random.Range( 1, 5 ) );
+            newRandomCell.SetState( PickState( ) );
             if( newRandomCell.state == State.Shell )
             {
                 newRandomCell.shellCount = 3;
@@ -186,7 +210,6 @@ public class BoardManager : MonoBehaviour
         {
             if( target.state == State.Shell )
             {
-                Debug.Log( newX.ToString() + " / " + newY.ToString() );
                 target.shellCount--;
                 target.transform.GetChild( 0 ).GetComponent<TMP_Text>( ).text = target.shellCount.ToString( );
             }
