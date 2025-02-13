@@ -13594,6 +13594,15 @@ MonoBehaviour:
   - {fileID: 668774858}
   - {fileID: 306493506}
   - {fileID: 1391145780}
+  cellProbs:
+  - state: 1
+    percentage: 40
+  - state: 2
+    percentage: 40
+  - state: 3
+    percentage: 15
+  - state: 4
+    percentage: 5
 --- !u!4 &1831289678
 Transform:
   m_ObjectHideFlags: 0
